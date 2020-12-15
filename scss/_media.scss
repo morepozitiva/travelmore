@@ -91,6 +91,17 @@
     }
 }
 @media screen and (max-width:768px) {
+    // search
+    header .search-field input {
+        padding: 15px 40px;
+        border: 2px solid #fff;
+        width: 280px;
+        text-align: center;
+        font-family: "Josefin Sans",sans-serif;
+        font-size: 1rem;
+        color: #232323;
+    }
+    // search end
     // menu
     .logo{
 		font-size: 2.8rem;
@@ -266,6 +277,15 @@
     }
 }
 @media screen and (max-width:480px) {
+    header .search-field input {
+        padding: 15px 40px;
+        border: 2px solid #fff;
+        width: 280px;
+        text-align: center;
+        font-family: "Josefin Sans",sans-serif;
+        font-size: 1rem;
+        color: #232323;
+    }
     .choose_section .flex {
         .choose_us 
         {
@@ -300,7 +320,15 @@
     }
 }
 @media screen and (max-width:360px) {
-
+    .search-field input {
+        padding: 15px 40px;
+        border: 2px solid #fff;
+        width: 280px;
+        text-align: center;
+        font-family: "Josefin Sans",sans-serif;
+        font-size: 1rem;
+        color: #232323;
+    }
     .steps {
         .steps_list {
             display: block;
@@ -316,6 +344,15 @@
     }
 }
 @media screen and (max-width:320px) {
+    header .search-field input {
+        padding: 15px 40px;
+        border: 2px solid #fff;
+        width: 280px;
+        text-align: center;
+        font-family: "Josefin Sans",sans-serif;
+        font-size: 1rem;
+        color: #232323;
+    }
     header .subtitle {
         font-size: 1.8rem;
     }
