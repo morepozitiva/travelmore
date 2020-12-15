@@ -91,17 +91,6 @@
     }
 }
 @media screen and (max-width:768px) {
-    // search
-    header .search-field input {
-        padding: 15px 40px;
-        border: 2px solid #fff;
-        width: 280px;
-        text-align: center;
-        font-family: "Josefin Sans",sans-serif;
-        font-size: 1rem;
-        color: #232323;
-    }
-    // search end
     // menu
     .logo{
 		font-size: 2.8rem;
@@ -199,6 +188,13 @@
         }
 	}
     // menu end
+
+    .review .review-content {
+        flex-wrap: wrap !important;
+        img{
+            width: 100%;
+        }
+    }
            
     .choose_section {
         .flex {
@@ -229,7 +225,7 @@
         }
     }
     .steps {
-        padding: 50px 0;
+        padding: 50px 0 !important;
         .steps_list {
             justify-content: space-evenly;
             li {
@@ -244,10 +240,10 @@
                     }
                 }
                 i {
-                    font-size: 4rem;
+                    font-size: 4rem !important;
                 }
                 p {
-                    font-size: 1.8rem;
+                    font-size: 1.8rem !important;
                 }
             }
         }
@@ -277,15 +273,6 @@
     }
 }
 @media screen and (max-width:480px) {
-    header .search-field input {
-        padding: 15px 40px;
-        border: 2px solid #fff;
-        width: 280px;
-        text-align: center;
-        font-family: "Josefin Sans",sans-serif;
-        font-size: 1rem;
-        color: #232323;
-    }
     .choose_section .flex {
         .choose_us 
         {
@@ -308,7 +295,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         input {
-           width: 100%;
+           width: 340px !important;
        }
     }
     .steps .steps_list {
@@ -320,15 +307,7 @@
     }
 }
 @media screen and (max-width:360px) {
-    .search-field input {
-        padding: 15px 40px;
-        border: 2px solid #fff;
-        width: 280px;
-        text-align: center;
-        font-family: "Josefin Sans",sans-serif;
-        font-size: 1rem;
-        color: #232323;
-    }
+    
     .steps {
         .steps_list {
             display: block;
@@ -359,12 +338,6 @@
     .spain .button {
         padding: 20px 35px;
     }
-    .review .review-content .review_wrap {
-        padding: 20px;
-        .avatar {
-            margin-right: 15px;
-            margin-bottom: 10px;
-            width: 50px;
-        }
-    }
+    
+    
 }
