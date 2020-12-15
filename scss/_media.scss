@@ -61,6 +61,14 @@
     .spain {
         padding: 100px 0;
     }
+    .review .review-content .review_wrap {
+        padding: 20px;
+        .avatar {
+            margin-right: 15px;
+            margin-bottom: 10px;
+            width: 50px;
+        }
+    }
 }
 @media screen and (max-width:800px) {
     .steps {
@@ -83,70 +91,103 @@
     }
 }
 @media screen and (max-width:768px) {
-    #nav{
-        .logo-link {
-            width: 50%;
-        }
-        .navbar {
-            display: none;
-            &.active_on_touch {
+    // menu
+    .logo{
+		font-size: 2.8rem;
+	}
+	#toggler{
+		display: block;
+		position: absolute;
+		right: 40px;
+		top: 15px;
+		z-index: 11;
+		width: 32px;
+		height: 32px;
+	}
+
+	#toggler-input:checked ~ nav{
+		transform: translate(0, 0) scale(1);
+		border-radius: 0;
+		opacity: 1;		
+	}
+
+	#toggler-input:checked ~ #toggler{
+		position: fixed;
+	}
+
+	#toggler-input:checked ~ #toggler span:nth-child(1) {
+		transform: translate(-50%, 16px) rotate(45deg);
+	}
+	#toggler-input:checked ~ #toggler span:nth-child(2) {
+		opacity: 0;
+	}
+	#toggler-input:checked ~ #toggler span:nth-child(3) {
+		transform: translate(-50%, -16px) rotate(-45deg);
+	}
+
+	#toggler span{
+		display: inline-block;
+		width: 100%;
+		height: 3px;
+		border-radius: 2px;
+		background-color: $white;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -2px);
+		transition: all .3s ease-in-out;
+	}
+
+	#toggler span:nth-child(1){
+		top: 0;
+	}
+	#toggler span:nth-child(2){
+		top: 50%;
+	}
+	#toggler span:nth-child(3){
+		top: 100%;
+	}
+
+	nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: $main;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		transform: translate(100%, 0) scale(0);
+		transform-origin: top right;
+		border-radius: 100vh;
+		opacity: 0;
+		transition: all .3s ease-in-out;
+        z-index: 10;
+        ul li{
+            display: block;
+            margin: 0;
+            a{
                 display: block;
-                padding: 30px 0;
-                li {
-                    margin: 15px 0;
+                width: 100%;
+                padding: 25px 10px 25px 10px;
+                font-size: 24px;
+                font-weight: 700;
+                border-bottom: 1px solid #ffffff;
+                color: rgba(255,255,255, .7);
+                &::first-child{
+                    border-top: 1px solid white;
+                }
+                &:hover,
+                &:focus,
+                &:active{
+                    color: rgba(255,255,255, 1);
+		            border-color: 2px solid $white;
                 }
             }
         }
-    }
-    .burger-wrap{
-        .nav-burger {
-            display: block !important;
-            position: relative;
-            width: 30px;
-            height: 20px;
-            z-index: 110;
-            top: 0;
-            right: 0;
-            float: right;
-            &.active_on_touch {
-                &::before {
-                    transform: rotate(45deg);
-                    top: 9px;
-                    }
-                &::after {
-                    transform: rotate(-45deg);
-                    bottom: 9px;
-                    }
-                    span {
-                        transform: scale(0);
-                    }
-            }
-            &::before, &::after {
-                content: '';
-                background-color: $white;
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                left: 0;
-                transition: all 0.3s ease 0s;
-            }
-            &::before {
-                top: 0;
-            }
-            &::after {
-                bottom: 0;
-            }
-            span {
-                position: absolute;
-                background-color:  $white;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                top: 9px;
-                transition: all 0.3s ease 0s;
-            }
-        }
-    }
+	}
+    // menu end
            
     .choose_section {
         .flex {
@@ -165,7 +206,7 @@
             .pic_wrap {
                 padding: 0;
                 margin-top: 30px;
-                justify-content: space-between;
+                // justify-content: space-between;
                 .pic1, .pic2 {
                     width: calc(50% - 30px);
                     margin: 0 15px;
