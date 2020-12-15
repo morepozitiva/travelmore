@@ -190,7 +190,7 @@
     // menu end
 
     .review .review-content {
-        flex-wrap: wrap !important;
+        flex-wrap: wrap ;
         img{
             width: 100%;
         }
@@ -225,7 +225,7 @@
         }
     }
     .steps {
-        padding: 50px 0 !important;
+        padding: 50px 0 ;
         .steps_list {
             justify-content: space-evenly;
             li {
@@ -240,10 +240,10 @@
                     }
                 }
                 i {
-                    font-size: 4rem !important;
+                    font-size: 4rem ;
                 }
                 p {
-                    font-size: 1.8rem !important;
+                    font-size: 1.8rem ;
                 }
             }
         }
@@ -295,7 +295,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         input {
-           width: 340px !important;
+           width: 340px;
        }
     }
     .steps .steps_list {
