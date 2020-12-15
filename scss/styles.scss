@@ -718,7 +718,7 @@ footer {
         flex-wrap: wrap;
         flex-direction: column;
         input {
-           width: 340px;
+           width: 100%;
        }
     }
     .steps .steps_list {
@@ -746,15 +746,7 @@ footer {
     }
 }
 @media screen and (max-width:320px) {
-    header .search-field input {
-        padding: 15px 40px;
-        border: 2px solid #fff;
-        width: 280px;
-        text-align: center;
-        font-family: "Josefin Sans",sans-serif;
-        font-size: 1rem;
-        color: #232323;
-    }
+    
     header .subtitle {
         font-size: 1.8rem;
     }
